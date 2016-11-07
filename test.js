@@ -1,20 +1,8 @@
-/**
- * @author Titus Wormer
- * @copyright 2016 Titus Wormer
- * @license MIT
- * @module is-alphanumerical
- * @fileoverview Test suite for `is-alphanumerical`.
- */
-
 'use strict';
 
-/* eslint-env node */
-
-/* Dependencies. */
 var test = require('tape');
 var alphanumerical = require('./');
 
-/* Tests. */
 test('alphanumerical(character)', function (t) {
   t.ok(alphanumerical('a'));
   t.ok(alphanumerical('z'));
