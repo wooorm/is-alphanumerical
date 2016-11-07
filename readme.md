@@ -1,12 +1,10 @@
 # is-alphanumerical [![Build Status][travis-badge]][travis] [![Coverage Status][codecov-badge]][codecov]
 
-<!--lint disable heading-increment list-item-spacing-->
-
 Check if a character is alphanumerical (`[a-zA-Z0-9]`).
 
 ## Installation
 
-[npm][npm-install]:
+[npm][]:
 
 ```bash
 npm install is-alphanumerical
@@ -53,7 +51,7 @@ code at the first position (`string`), is alphanumerical.
 
 [codecov]: https://codecov.io/github/wooorm/is-alphanumerical
 
-[npm-install]: https://docs.npmjs.com/cli/install
+[npm]: https://docs.npmjs.com/cli/install
 
 [license]: LICENSE
 

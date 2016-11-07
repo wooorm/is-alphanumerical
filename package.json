@@ -29,11 +29,8 @@
     "browserify": "^13.0.1",
     "esmangle": "^1.0.1",
     "nyc": "^8.0.0",
-    "remark-cli": "^1.0.0",
-    "remark-comment-config": "^4.0.0",
-    "remark-github": "^5.0.0",
-    "remark-lint": "^4.0.0",
-    "remark-validate-links": "^4.0.0",
+    "remark-cli": "^2.0.0",
+    "remark-preset-wooorm": "^1.0.0",
     "tape": "^4.0.0",
     "xo": "^0.17.0"
   },
@@ -60,15 +57,6 @@
     "branches": 100
   },
   "remarkConfig": {
-    "output": true,
-    "plugins": [
-      "comment-config",
-      "github",
-      "lint",
-      "validate-links"
-    ],
-    "settings": {
-      "bullet": "*"
-    }
+    "presets": "wooorm"
   }
 }
