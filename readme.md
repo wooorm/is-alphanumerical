@@ -15,11 +15,11 @@ npm install is-alphanumerical
 ```javascript
 var alphanumerical = require('is-alphanumerical');
 
-alphanumerical('a'); // true
-alphanumerical('Z'); // true
-alphanumerical('0'); // true
-alphanumerical(' '); // false
-alphanumerical('💩'); // false
+alphanumerical('a'); //=> true
+alphanumerical('Z'); //=> true
+alphanumerical('0'); //=> true
+alphanumerical(' '); //=> false
+alphanumerical('💩'); //=> false
 ```
 
 ## API
