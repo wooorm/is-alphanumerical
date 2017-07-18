@@ -12,14 +12,14 @@
     "numerical",
     "alphanumerical"
   ],
-  "files": [
-    "index.js"
-  ],
-  "repository": "https://github.com/wooorm/is-alphanumerical",
+  "repository": "wooorm/is-alphanumerical",
   "bugs": "https://github.com/wooorm/is-alphanumerical/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
+  ],
+  "files": [
+    "index.js"
   ],
   "dependencies": {
     "is-alphabetical": "^1.0.0",
@@ -58,6 +58,8 @@
     "branches": 100
   },
   "remarkConfig": {
-    "plugins": ["preset-wooorm"]
+    "plugins": [
+      "preset-wooorm"
+    ]
   }
 }
