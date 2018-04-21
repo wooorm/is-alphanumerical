@@ -4,19 +4,12 @@ node_js:
 - '8.0'
 after_success: bash <(curl -s https://codecov.io/bash)
 deploy:
-  - provider: npm
-    email: tituswormer@gmail.com
-    api_key:
-      secure: aHS6hKrqFZqBASib/5XXHtZxabVWfYXsJ4U7GNw64quQ7uHx2EfdiY+p6veKOiuJU7x7Gy77rUlXW4isZOgjctfP8054o64ChStp1VlSvQLHhdGyRi7Ckh8jk1bbspwn0fljweNTI14bZTZaXF1dEkEglgPK2lkzWt465Kw2PvVZQ4/23hxO/xvpnP/J6nivHHiPMFrDunLqXk2liN2koFsYtuOerv82c1Yp5EudmsokSOfPrJG+rhMeSMH00UZiPpqlj21Q54aHaAK4oDhbuo5z5nozDXjnAfoYNIT5qVShSrULwst7n221Se8IMtXEYLi6av2aa+1JUuDAmlMjDoxdXIVw69pb43irYRqqtBvs3vexadq2hATGa8pINS3Mt+x4vpDwA841oM8D0mEOnoPYKmA0rwojWLntu6ejy0E8xLxCMWBN4tJIg1tszHkFWoLbnr7f6zL41QPeYDwJ8FwgZ50clZN8lvpBN15aWq//VidNRlumPl9CFACs7iqlHOU9Kko5gbCOceS8tWvikK10lISe7nrZig+FzlZFh/a7/H5gBAns9atEavqBQdwHuC9tbZ4eksSOJ6BGRqMcxdC5q1U8RermAOMdcj9oyqn5SIpck4iogAk06Alzf0IlWh/Ysp8JGJc0jAkbQjKqCL0ZaFArIlwcsvmMFdTEraY=
-    on:
-      tags: true
-      node: '4.0'
-  - provider: releases
-    api_key:
-      secure: KrgLAc28BofBPauXUbtYYvVYSGMwXkbc7NrQ7V/Bg6HXmVUz4NZYH53swoljb5yF38Z6HHCooLxOlDxUx4u3YPT7ENXXhf2r2/7uFpbxbdmNJra7deLzLEuDFzjaWB7F1v0EGxER90KKIetD902l0uT2GsEmeMHrtbxYXyma3NWvyd8/sWNN6VrSsALMtimrQt0ckphAtMH2bbM0bWKe9sTTh5gb2ZRbGb8mnRLoxW2LraM1gZtd5czG2w5yXDEyWAECGzGYoNnG3Q4TGkBZO51MYgB5Je2NT6mh7rfldyDBSncDBKCGSeLVKH6R0fzIKVRoDDhUs0hyoFfVhKXm9q68PnKbaBNSbxaGw/FfmHUhObK8Kgu4tLbY/SkvE36NanjGvXjjLn0w6QgSXLHma2EqFrcU/hHOiubIe1Gs5Q8cNpboay+ZOKkmdackuSaxUYg2mak7/07hTLxZCb7spM/n4f4/2pvywOuZehdaadMFpa6mEXdm0P2lSp0NRV5qcUDGf0yqYYkX9YERTnnuz7ujTWLoi0BpN0dmTQF3KI/QH0xpJ7/+K9rN0VhauNd2wRnoPntgc1OCFmlvn3JAwnSAn6pN7RNoxzpxGCcINkN7X1kRlxCwKJ4St6kEOgn6JB1FJGGe/B1d1bHmmHFfIecxaKIzq62rINvX66CHxLw=
-    file:
-      - "is-alphanumerical.js"
-      - "is-alphanumerical.min.js"
-    on:
-      tags: true
-      node: '8.0'
+  provider: releases
+  api_key:
+    secure: KrgLAc28BofBPauXUbtYYvVYSGMwXkbc7NrQ7V/Bg6HXmVUz4NZYH53swoljb5yF38Z6HHCooLxOlDxUx4u3YPT7ENXXhf2r2/7uFpbxbdmNJra7deLzLEuDFzjaWB7F1v0EGxER90KKIetD902l0uT2GsEmeMHrtbxYXyma3NWvyd8/sWNN6VrSsALMtimrQt0ckphAtMH2bbM0bWKe9sTTh5gb2ZRbGb8mnRLoxW2LraM1gZtd5czG2w5yXDEyWAECGzGYoNnG3Q4TGkBZO51MYgB5Je2NT6mh7rfldyDBSncDBKCGSeLVKH6R0fzIKVRoDDhUs0hyoFfVhKXm9q68PnKbaBNSbxaGw/FfmHUhObK8Kgu4tLbY/SkvE36NanjGvXjjLn0w6QgSXLHma2EqFrcU/hHOiubIe1Gs5Q8cNpboay+ZOKkmdackuSaxUYg2mak7/07hTLxZCb7spM/n4f4/2pvywOuZehdaadMFpa6mEXdm0P2lSp0NRV5qcUDGf0yqYYkX9YERTnnuz7ujTWLoi0BpN0dmTQF3KI/QH0xpJ7/+K9rN0VhauNd2wRnoPntgc1OCFmlvn3JAwnSAn6pN7RNoxzpxGCcINkN7X1kRlxCwKJ4St6kEOgn6JB1FJGGe/B1d1bHmmHFfIecxaKIzq62rINvX66CHxLw=
+  file:
+    - "is-alphanumerical.js"
+    - "is-alphanumerical.min.js"
+  on:
+    tags: true
+    node: '8.0'
