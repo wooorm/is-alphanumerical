@@ -1,7 +1,7 @@
 'use strict';
 
 var test = require('tape');
-var alphanumerical = require('./');
+var alphanumerical = require('.');
 
 test('alphanumerical(character)', function (t) {
   t.ok(alphanumerical('a'));
