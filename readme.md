@@ -55,4 +55,4 @@ code at the first position (`string`), is alphanumerical.
 
 [license]: license
 
-[author]: http://wooorm.com
+[author]: https://wooorm.com
