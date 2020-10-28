@@ -3,7 +3,7 @@
 var test = require('tape')
 var alphanumerical = require('.')
 
-test('alphanumerical(character)', function(t) {
+test('alphanumerical(character)', function (t) {
   t.ok(alphanumerical('a'))
   t.ok(alphanumerical('z'))
   t.ok(alphanumerical('A'))

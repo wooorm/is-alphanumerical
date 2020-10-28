@@ -1,3 +1,5 @@
 coverage/
 is-alphanumerical.js
 is-alphanumerical.min.js
+*.json
+*.md
