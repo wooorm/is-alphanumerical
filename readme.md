@@ -9,6 +9,9 @@ Check if a character is alphanumerical (`[a-zA-Z0-9]`).
 
 ## Install
 
+This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
+instead of `require`d.
+
 [npm][]:
 
 ```sh
@@ -18,18 +21,21 @@ npm install is-alphanumerical
 ## Use
 
 ```js
-var alphanumerical = require('is-alphanumerical')
+import {isAlphanumerical} from 'is-alphanumerical'
 
-alphanumerical('a') // => true
-alphanumerical('Z') // => true
-alphanumerical('0') // => true
-alphanumerical(' ') // => false
-alphanumerical('💩') // => false
+isAlphanumerical('a') // => true
+isAlphanumerical('Z') // => true
+isAlphanumerical('0') // => true
+isAlphanumerical(' ') // => false
+isAlphanumerical('💩') // => false
 ```
 
 ## API
 
-### `alphanumerical(character)`
+This package exports the following identifiers: `isAlphanumerical`.
+There is no default export.
+
+### `isAlphanumerical(character)`
 
 Check whether the given character code (`number`), or the character code at the
 first position (`string`), is alphanumerical.

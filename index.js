@@ -1,12 +1,8 @@
-'use strict'
-
-var alphabetical = require('is-alphabetical')
-var decimal = require('is-decimal')
-
-module.exports = alphanumerical
+import {isAlphabetical} from 'is-alphabetical'
+import {isDecimal} from 'is-decimal'
 
 // Check if the given character code, or the character code at the first
 // character, is alphanumerical.
-function alphanumerical(character) {
-  return alphabetical(character) || decimal(character)
+export function isAlphanumerical(character) {
+  return isAlphabetical(character) || isDecimal(character)
 }
