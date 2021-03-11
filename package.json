@@ -1,6 +1,6 @@
 {
   "name": "is-alphanumerical",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "Check if a character is alphanumerical",
   "license": "MIT",
   "keywords": [
